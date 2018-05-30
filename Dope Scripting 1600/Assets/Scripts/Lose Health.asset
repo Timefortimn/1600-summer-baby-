@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7a6d699004d94a41a7b41e585422b3b, type: 3}
-  m_Name: Health
+  m_Name: Lose Health
   m_EditorClassIdentifier: 
   AnyAnimal: {fileID: 11400000, guid: 8561806d6d096bc43921d6c3d805eb02, type: 2}
-  PowerLevel: 1
+  PowerLevel: -5

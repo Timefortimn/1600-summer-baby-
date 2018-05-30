@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19a0784a49169a446bf9d9bd677c083c, type: 3}
   m_Name: Horse
   m_EditorClassIdentifier: 
-  Health: 9000
+  Health: 8994
   Speed: 1
   Strength: 1
   LegCount: 2

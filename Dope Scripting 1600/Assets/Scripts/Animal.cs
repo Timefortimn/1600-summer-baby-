@@ -9,11 +9,4 @@ public class Animal : ScriptableObject
     public float Speed = 1.0f;
     public float Strength = 1.0f;
     public int LegCount = 2;
-
-    public PowerUpBase PowerUp;
-
-    public void UpdateHealth()
-    {
-        Health += PowerUp.PowerLevel;
-    }
 }
