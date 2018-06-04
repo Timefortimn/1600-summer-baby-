@@ -8,12 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19a0784a49169a446bf9d9bd677c083c, type: 3}
-  m_Name: Horse
+  m_Script: {fileID: 11500000, guid: 17523352b6bad014dbb9c7901b375369, type: 3}
+  m_Name: The Evil Power
   m_EditorClassIdentifier: 
-  Health: 96
-  Speed: 1
-  Strength: 1
-  LegCount: 2
-  HairCount: 4000
-  HairColor: {r: 0, g: 0, b: 0, a: 1}
+  Value: 0
