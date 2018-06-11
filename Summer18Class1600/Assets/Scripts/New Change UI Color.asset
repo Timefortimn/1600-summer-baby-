@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe81b34a12bef2d419fb2e90b4bc7cde, type: 3}
   m_Name: New Change UI Color
   m_EditorClassIdentifier: 
-  NewColor: {r: 1, g: 0.55914044, b: 0, a: 0}
+  NewColor: {r: 1, g: 0.29245424, b: 0, a: 1}
