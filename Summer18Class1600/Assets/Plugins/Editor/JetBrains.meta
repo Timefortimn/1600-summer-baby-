@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:Summer18Class1600/Assets/Plugins/Editor/JetBrains.meta
 fileFormatVersion: 2
 guid: e117b90bae82d1d40b1f7212b4da70fe
 folderAsset: yes
@@ -6,3 +7,13 @@ DefaultImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+=======
+fileFormatVersion: 2
+guid: 864fd2f92d6f7b047961aaf448597b0a
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+>>>>>>> Stashed changes:Dope Scripting 1600/Assets/Plugins/Editor/JetBrains.meta
