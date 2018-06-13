@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MovePlayer : MonoBehaviour
 {
@@ -25,7 +26,6 @@ public class MovePlayer : MonoBehaviour
 	
 	void Update ()
 	{
-		
 		float mouseXInput = Input.GetAxis("Mouse X");
 		Vector3 lookhere = new Vector3(0,mouseXInput,0);
 		transform.Rotate(lookhere);
@@ -34,9 +34,11 @@ public class MovePlayer : MonoBehaviour
         {
             newPosition.y = JumpSpeed;
 	        IsGrounded = false;
-
         }
 		newPosition.y -= Gravity;
+		newPosition.z = Speed * Input.GetAxis("Vertical");
+		newPosition.x = Speed * Input.GetAxis("Horizontal");
+		newPosition = transform.TransformDirection(newPosition);
         controller.Move(newPosition * Time.deltaTime);
 	}
 }
