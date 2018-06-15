@@ -9,7 +9,7 @@ public class ColorBehaviour : MonoBehaviour
 
 	void Start ()
     {
-        ChangeColor.ColorUI(GetComponent<Image>());
+	    ChangeColor.ColorUI(GetComponent<Image>());
 	}
 
 }

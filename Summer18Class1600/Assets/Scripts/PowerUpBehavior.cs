@@ -5,12 +5,12 @@ using UnityEngine;
 public class PowerUpBehavior : MonoBehaviour
 {
     public PowerUpBase PowerUp;
-    public Animal AnimalInfo;
+    public FloatData Health;
 
     void OnTriggerEnter()
     {
         PowerUp.RunPowerUp();
-        print(AnimalInfo.Health);
+        print(Health.Value);
         gameObject.SetActive(false);
     }
 }
