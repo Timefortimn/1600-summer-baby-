@@ -11,6 +11,6 @@ public class PowerUpBase : ScriptableObject
 
     public void RunPowerUp()
     {
-        Health.Value = PowerLevel;
+        Health.Value -= PowerLevel;
     }
 }
