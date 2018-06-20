@@ -22,10 +22,13 @@
           <e p="PlayerTrigger.cs" t="Include" />
           <e p="PowerUpBase.cs" t="Include" />
           <e p="PowerUpBehavior.cs" t="Include" />
+          <e p="Wallbehavior.cs" t="Include" />
           <e p="WallData.cs" t="Include" />
           <e p="Weapons" t="Include">
             <e p="WeaponObject.cs" t="Include" />
+            <e p="WeaponPickUp.cs" t="Include" />
             <e p="Weapons.cs" t="Include" />
+            <e p="WeaponsCollection.cs" t="Include" />
           </e>
         </e>
       </e>
