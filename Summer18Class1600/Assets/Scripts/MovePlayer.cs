@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Experimental.Rendering;
+using UnityEngine.Experimental.UIElements;
+using UnityEngine.Networking;
 
-public class MovePlayer : MonoBehaviour
+public class MovePlayer : NetworkBehaviour
 {
     private CharacterController controller;
 	private Vector3 newPosition;
@@ -13,12 +16,17 @@ public class MovePlayer : MonoBehaviour
     public float Speed = 10.0f;
     public float Gravity = 4.0f;
     public float JumpSpeed = 50.0f;
+	public GameObject bulletPrefab;
+	public Transform bulletSpawn;
 
 	void Start ()
     {
         controller = GetComponent<CharacterController>();
     }
-
+	public override void OnStartLocalPlayer()
+	{
+		GetComponent<MeshRenderer>().material.color = Color.green;
+	}
 	void OnCollisionStay()
 	{
 		IsGrounded = true;
@@ -26,6 +34,11 @@ public class MovePlayer : MonoBehaviour
 	
 	void Update ()
 	{
+		if (!isLocalPlayer)
+		{
+			return;
+		}
+		
 		float mouseXInput = Input.GetAxis("Mouse X");
 		Vector3 lookhere = new Vector3(0,mouseXInput,0);
 		transform.Rotate(lookhere);
@@ -40,5 +53,19 @@ public class MovePlayer : MonoBehaviour
 		newPosition.x = Speed * Input.GetAxis("Horizontal");
 		newPosition = transform.TransformDirection(newPosition);
         controller.Move(newPosition * Time.deltaTime);
+
+		if (Input.GetKeyDown(KeyCode.Mouse0))
+		{
+			Fire();
+		}
+	}
+
+	void Fire()
+	{
+		var bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+		
+		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 50;
+		
+		Destroy(bullet, 1.5f);
 	}
 }
