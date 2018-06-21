@@ -12,12 +12,13 @@ public class HeathBarBehaviour : MonoBehaviour
 	void Start()
 	{
 		HealthImage = GetComponent<Image>();
+		HealthLevel.Value = 1.0f;
 	}
 
 	void Update()
 	{
 		HealthImage.fillAmount = HealthLevel.Value;
-		if (HealthImage.fillAmount < 0.5)
+		if (HealthImage.fillAmount < 0.51)
 		{
 			HealthImage.color = Color.yellow;
 		}
@@ -26,7 +27,7 @@ public class HeathBarBehaviour : MonoBehaviour
 			HealthImage.color = Color.green;
 		}
 
-		if (HealthImage.fillAmount < 0.25)
+		if (HealthImage.fillAmount < 0.26)
 		{
 			HealthImage.color = Color.red;
 		}
