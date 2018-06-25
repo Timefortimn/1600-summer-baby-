@@ -66,6 +66,6 @@ public class MovePlayer : NetworkBehaviour
 		
 		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 50;
 		
-		Destroy(bullet, 1.5f);
+		Destroy(bullet, 1.0f);
 	}
 }
