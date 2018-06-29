@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Tim\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_Summer18Class1600.-377158996.00" t="ExcludeRecursive" />
-    <e p="D:\This is next\Documents\GitKraken\1600summer2018\Summer18Class1600" t="IncludeRecursive">
+    <e p="C:\Users\10738964\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_Summer18Class1600.-1008815498.00" t="ExcludeRecursive" />
+    <e p="C:\Users\10738964\Documents\1600summer2018\Summer18Class1600" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Animal.cs" t="Include" />
           <e p="AnimalBehavior.cs" t="Include" />
+          <e p="Billboard.cs" t="Include" />
+          <e p="Bullet.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
           <e p="ChangeUIColor.cs" t="Include" />
           <e p="ColorBehaviour.cs" t="Include" />
@@ -19,12 +21,17 @@
           <e p="MovePlayer.cs" t="Include" />
           <e p="MyPeasant.cs" t="Include" />
           <e p="MyPlayerOne.cs" t="Include" />
+          <e p="PlayerHealth.cs" t="Include" />
           <e p="PlayerTrigger.cs" t="Include" />
           <e p="PowerUpBase.cs" t="Include" />
           <e p="PowerUpBehavior.cs" t="Include" />
           <e p="Wallbehavior.cs" t="Include" />
           <e p="WallData.cs" t="Include" />
           <e p="Weapons" t="Include">
+            <e p="Ammo.cs" t="Include" />
+            <e p="AmmoBehavior.cs" t="Include" />
+            <e p="AmmoData.cs" t="Include" />
+            <e p="FireAmmo.cs" t="Include" />
             <e p="WeaponObject.cs" t="Include" />
             <e p="WeaponPickUp.cs" t="Include" />
             <e p="Weapons.cs" t="Include" />
