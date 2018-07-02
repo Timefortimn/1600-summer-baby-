@@ -72,6 +72,6 @@ public class MovePlayer : NetworkBehaviour
 		
 		NetworkServer.Spawn(bullet);
 		
-		Destroy(bullet, 1.0f);
+		Destroy(bullet, 2.0f);
 	}
 }

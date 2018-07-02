@@ -37,6 +37,7 @@
             <e p="Weapons.cs" t="Include" />
             <e p="WeaponsCollection.cs" t="Include" />
           </e>
+          <e p="WhileLoops.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
