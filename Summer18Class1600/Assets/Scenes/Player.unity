@@ -503,6 +503,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1356207134}
+  - component: {fileID: 1356207136}
+  - component: {fileID: 1356207135}
   m_Layer: 0
   m_Name: Enemy Spawner
   m_TagString: Untagged
@@ -523,6 +525,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1356207135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1356207133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7b03abacdb91e44b7df4ac9886702d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 1611394531799108, guid: cc1dd8b3380087a49aaac3d7a62a6fc0,
+    type: 2}
+  numberOfEnemies: 4
+--- !u!114 &1356207136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1356207133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 1
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1492819652
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,6 +902,7 @@ MonoBehaviour:
   m_OnlineScene: 
   m_SpawnPrefabs:
   - {fileID: 1545674223033052, guid: 826fe8acae1a16d4baffb6025b2278ef, type: 2}
+  - {fileID: 1611394531799108, guid: cc1dd8b3380087a49aaac3d7a62a6fc0, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
