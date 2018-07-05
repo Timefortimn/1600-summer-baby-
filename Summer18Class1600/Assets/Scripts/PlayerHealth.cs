@@ -8,7 +8,7 @@ public class PlayerHealth : NetworkBehaviour
 {
 
 	public const int maxHealth = 100;
-	//[SyncVar(hook = "OnChangeHealth")]
+	[SyncVar(hook = "OnChangeHealth")]
 	public int currentHealth = maxHealth;
 	public RectTransform healthBar;
 
@@ -18,18 +18,28 @@ public class PlayerHealth : NetworkBehaviour
 		{
 			return;
 		}
+
 		currentHealth -= amount;
 		if (currentHealth <= 0)
 		{
-			currentHealth = 0;
-			Debug.Log("Dead!");
+			Debug.Log("Respawn");
+			currentHealth = maxHealth;
+			RpcRespawn();
+		}
+	}
+
+	void OnChangeHealth(int currentHealth)
+		{
+			healthBar.sizeDelta = new Vector2(currentHealth, healthBar.sizeDelta.y);
 		}
 
-		//void OnChangeHealth(int currentHealth)
-		//{
-			healthBar.sizeDelta = new Vector2(currentHealth, healthBar.sizeDelta.y);
-		//}
-		
-		
+	[ClientRpc]
+	void RpcRespawn()
+	{
+		if (isLocalPlayer)
+		{
+			transform.position = Vector3.zero;
+		}
 	}
+		
 }
