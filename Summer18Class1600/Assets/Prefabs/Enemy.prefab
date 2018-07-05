@@ -421,6 +421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 100
   healthBar: {fileID: 224294024891798520}
+  destroyOnDeath: 1
 --- !u!114 &114397095472258888
 MonoBehaviour:
   m_ObjectHideFlags: 1
