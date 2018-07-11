@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -8,15 +9,20 @@ using UnityEngine.Networking;
 
 public class MoveEnemy : NetworkBehaviour
 {
-	private NavMeshAgent Agent;
+	public NavMeshAgent Agent;
 	public Transform TargetPlayer;
-	
-	public override void OnStartServer()
+	public AIControl Control;
+
+	private void Start ()
 	{
 		Agent = GetComponent<NavMeshAgent>();
+		Control.ConfigAI(Agent);
 	}
-
-	void Update () {
+	
+	private void Update () 
+	{
+		Agent.destination = TargetPlayer.position;
 		
 	}
+	
 }

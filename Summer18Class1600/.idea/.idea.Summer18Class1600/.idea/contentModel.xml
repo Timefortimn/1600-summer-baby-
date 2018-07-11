@@ -38,7 +38,9 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AIControl.cs" t="Include" />
           <e p="AIMovement.cs" t="Include" />
+          <e p="AISpawner.cs" t="Include" />
           <e p="Animal.cs" t="Include" />
           <e p="AnimalBehavior.cs" t="Include" />
           <e p="Billboard.cs" t="Include" />
@@ -51,6 +53,7 @@
           <e p="FloatData.cs" t="Include" />
           <e p="HeathBarBehaviour.cs" t="Include" />
           <e p="IfStatements.cs" t="Include" />
+          <e p="Level.cs" t="Include" />
           <e p="Mammal.cs" t="Include" />
           <e p="Menu" t="Include">
             <e p="LoadScreenOnClick.cs" t="Include" />
