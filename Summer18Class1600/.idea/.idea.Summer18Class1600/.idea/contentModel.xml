@@ -75,6 +75,8 @@
             <e p="AmmoBehavior.cs" t="Include" />
             <e p="AmmoData.cs" t="Include" />
             <e p="FireAmmo.cs" t="Include" />
+            <e p="PartPiece.cs" t="Include" />
+            <e p="Parts.cs" t="Include" />
             <e p="WeaponObject.cs" t="Include" />
             <e p="WeaponPickUp.cs" t="Include" />
             <e p="Weapons.cs" t="Include" />
