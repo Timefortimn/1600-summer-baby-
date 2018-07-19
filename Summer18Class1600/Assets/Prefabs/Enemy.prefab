@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 223774654359675732}
   - component: {fileID: 114397095472258888}
   - component: {fileID: 114666141412172512}
-  - component: {fileID: 114112795635624718}
   m_Layer: 5
   m_Name: Healthbar
   m_TagString: Untagged
@@ -61,6 +60,7 @@ GameObject:
   - component: {fileID: 65635107823928626}
   - component: {fileID: 114201336451652736}
   - component: {fileID: 114561383697840520}
+  - component: {fileID: 114458031732002848}
   - component: {fileID: 114656896516283516}
   - component: {fileID: 114001673055446980}
   - component: {fileID: 195703196462159500}
@@ -398,17 +398,6 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
---- !u!114 &114112795635624718
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1504799584501038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e32e5379f859854f8a268e56da5f675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114201336451652736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -471,6 +460,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114458031732002848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1611394531799108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31394de64104f65419e3006c1891217c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetPlayer: {fileID: 1016937773179222, guid: 5a12328ce7a13e141980e1575c1c9eb2,
+    type: 2}
 --- !u!114 &114561383697840520
 MonoBehaviour:
   m_ObjectHideFlags: 1
