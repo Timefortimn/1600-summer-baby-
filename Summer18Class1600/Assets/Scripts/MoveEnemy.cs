@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 
 [RequireComponent(typeof(NavMeshAgent))]
 
-public class MoveEnemy : NetworkBehaviour
+public class MoveEnemy : MonoBehaviour
 {
 	public NavMeshAgent Agent;
 	public Transform TargetPlayer;

@@ -88,6 +88,8 @@
             <e p="WeaponsCollection.cs" t="Include" />
           </e>
           <e p="WhileLoops.cs" t="Include" />
+          <e p="ZombiePlayer.cs" t="Include" />
+          <e p="ZombiePlayerHealth.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
