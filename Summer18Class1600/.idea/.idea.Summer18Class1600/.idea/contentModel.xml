@@ -49,13 +49,19 @@
           <e p="Animal.cs" t="Include" />
           <e p="AnimalBehavior.cs" t="Include" />
           <e p="Billboard.cs" t="Include" />
-          <e p="Bullet.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
           <e p="ChangeUIColor.cs" t="Include" />
           <e p="ColorBehaviour.cs" t="Include" />
           <e p="DoAddition.cs" t="Include" />
           <e p="EnemySpawner.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
+          <e p="GameStates" t="Include">
+            <e p="Ending.cs" t="Include" />
+            <e p="GameStateBase.cs" t="Include" />
+            <e p="GameStates.cs" t="Include" />
+            <e p="Playing.cs" t="Include" />
+            <e p="Starting.cs" t="Include" />
+          </e>
           <e p="HeathBarBehaviour.cs" t="Include" />
           <e p="IfStatements.cs" t="Include" />
           <e p="Level.cs" t="Include" />
@@ -65,7 +71,6 @@
             <e p="QuitOnClick.cs" t="Include" />
             <e p="SelectOnInput.cs" t="Include" />
           </e>
-          <e p="MoveEnemy.cs" t="Include" />
           <e p="MovePlayer.cs" t="Include" />
           <e p="MyPeasant.cs" t="Include" />
           <e p="MyPlayerOne.cs" t="Include" />
@@ -80,16 +85,25 @@
             <e p="AmmoBehavior.cs" t="Include" />
             <e p="AmmoData.cs" t="Include" />
             <e p="FireAmmo.cs" t="Include" />
-            <e p="PartPiece.cs" t="Include" />
-            <e p="Parts.cs" t="Include" />
             <e p="WeaponObject.cs" t="Include" />
             <e p="WeaponPickUp.cs" t="Include" />
             <e p="Weapons.cs" t="Include" />
             <e p="WeaponsCollection.cs" t="Include" />
           </e>
           <e p="WhileLoops.cs" t="Include" />
-          <e p="ZombiePlayer.cs" t="Include" />
-          <e p="ZombiePlayerHealth.cs" t="Include" />
+          <e p="Zombie Game" t="Include">
+            <e p="Parts" t="Include">
+              <e p="Bullet.cs" t="Include" />
+              <e p="BulletData.cs" t="Include" />
+              <e p="PartCollection.cs" t="Include" />
+              <e p="PartPickUp.cs" t="Include" />
+              <e p="PartPiece.cs" t="Include" />
+              <e p="Parts.cs" t="Include" />
+            </e>
+            <e p="ZombiePlayer.cs" t="Include" />
+            <e p="ZombiePlayerHealth.cs" t="Include" />
+            <e p="ZombieSpawner.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />

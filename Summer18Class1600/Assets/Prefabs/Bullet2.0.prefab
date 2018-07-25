@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef9fd60ec4d73cb4694f22f2a5cdad4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DamageLevel: {fileID: 11400000, guid: 9f2ceb5d365ba1b409220c01c83727f6, type: 2}
 --- !u!135 &135065821740934972
 SphereCollider:
   m_ObjectHideFlags: 1
