@@ -9,7 +9,7 @@ public class PartPickUp : MonoBehaviour {
 
 	private void OnTriggerEnter(Collider obj)
 	{
-		Collection.CollectPart(Part);
-		Destroy(gameObject);
+			Collection.CollectPart(Part);
+			Destroy(gameObject);
 	}
 }

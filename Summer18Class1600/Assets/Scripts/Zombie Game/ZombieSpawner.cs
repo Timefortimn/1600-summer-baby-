@@ -23,12 +23,13 @@ public class ZombieSpawner : MonoBehaviour {
 				var spawnPosition = SpawnLocation.transform.position +
 				                    new Vector3(Random.Range(-8.0f, 8.0f), 0.0f, Random.Range(-8.0f, 8.0f));
 				var spawnRotation = Quaternion.Euler(0.0f, Random.Range(0, 180), 0.0f);
-				Instantiate(ZombiePrefab, spawnPosition, spawnRotation);
+				GameObject newZombie = Instantiate(ZombiePrefab, spawnPosition, spawnRotation);
+				newZombie.GetComponent<AIMovement>().Destination = TargetPlayer;
 			}
 
 			numberOfEnemies--;
             
-			yield return new WaitForSeconds(5);
+			yield return new WaitForSeconds(20);
 		}
         
 	}
