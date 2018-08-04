@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PartPiece : MonoBehaviour {
+[CreateAssetMenu]
+public class PartPiece : ScriptableObject {
 
-	public float DamageLevel = 20.0f;
+	public int DamageLevel = 20;
 
 	public float DoDamage()
 	{
