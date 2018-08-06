@@ -29,9 +29,11 @@ public class AIMovement : MonoBehaviour
 	{
 		var hit = collision.gameObject;
 		var health = hit.GetComponent<ZombiePlayerHealth>();
+		var camera = hit.GetComponentInChildren<MoveOnHit>();
 		if (health != null)
 		{
-			health.TakeDamage(20);
+			health.TakeDamage(10);
+			camera.CameraMove();
 		}
 	}
 }
