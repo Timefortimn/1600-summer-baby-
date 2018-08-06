@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1067,6 +1067,7 @@ GameObject:
   - component: {fileID: 1740608888}
   - component: {fileID: 1740608887}
   - component: {fileID: 1740608891}
+  - component: {fileID: 1740608892}
   m_Layer: 0
   m_Name: Middle Wall
   m_TagString: Untagged
@@ -1154,6 +1155,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WallPower: {fileID: 11400000, guid: 0af55ba60edc43949b4d1ca6388ea611, type: 2}
   Health: {fileID: 11400000, guid: 9aa0698b447aec74ea73e4e9c4b9ded1, type: 2}
+--- !u!208 &1740608892
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1740608886}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2020051521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,8 +1231,8 @@ MonoBehaviour:
   m_SpawnPrefabs:
   - {fileID: 1545674223033052, guid: 826fe8acae1a16d4baffb6025b2278ef, type: 2}
   - {fileID: 1611394531799108, guid: cc1dd8b3380087a49aaac3d7a62a6fc0, type: 2}
-  m_CustomConfig: 0
-  m_MaxConnections: 4
+  m_CustomConfig: 1
+  m_MaxConnections: 2
   m_ConnectionConfig:
     m_PacketSize: 1440
     m_FragmentSize: 500
@@ -1258,7 +1274,7 @@ MonoBehaviour:
     m_MinNetSimulatorTimeout: 1
     m_MaxNetSimulatorTimeout: 12000
   m_Channels: 0500000000000000
-  m_UseWebSockets: 0
+  m_UseWebSockets: 1
   m_UseSimulator: 0
   m_SimulatedLatency: 1
   m_PacketLossPercentage: 0
@@ -1267,7 +1283,7 @@ MonoBehaviour:
   m_MatchHost: mm.unet.unity3d.com
   m_MatchPort: 443
   matchName: default
-  matchSize: 4
+  matchSize: 2
   isNetworkActive: 0
   matchMaker: {fileID: 0}
 --- !u!4 &2020051524
