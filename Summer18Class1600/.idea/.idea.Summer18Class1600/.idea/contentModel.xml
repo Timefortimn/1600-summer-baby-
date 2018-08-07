@@ -42,6 +42,7 @@
             </e>
           </e>
         </e>
+        <e p="MoveOnHit.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AIControl.cs" t="Include" />
           <e p="AIMovement.cs" t="Include" />
