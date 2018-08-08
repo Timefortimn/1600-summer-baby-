@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Tim\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_Summer18Class1600.-377158996.00" t="ExcludeRecursive" />
-    <e p="D:\This is next\Documents\GitKraken\1600summer2018\Summer18Class1600" t="IncludeRecursive">
+    <e p="C:\Users\10738964\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_Summer18Class1600.-1008815498.00" t="ExcludeRecursive" />
+    <e p="C:\Users\10738964\Documents\1600summer2018\Summer18Class1600" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Animation" t="Include">
@@ -11,7 +11,6 @@
           <e p="IntData.cs" t="Include" />
           <e p="MoveOnHit.cs" t="Include" />
         </e>
-        <e p="ChangeLives.cs" t="Include" />
         <e p="Menu Scene" t="Include">
           <e p="Fonts" t="Include">
             <e p="Jupiter" t="Include">
@@ -98,6 +97,8 @@
           <e p="WhileLoops.cs" t="Include" />
           <e p="Zombie Game" t="Include">
             <e p="ChangeAudio.cs" t="Include" />
+            <e p="ChangeLives.cs" t="Include" />
+            <e p="LoopLoop.cs" t="Include" />
             <e p="Parts" t="Include">
               <e p="Bullet.cs" t="Include" />
               <e p="BulletData.cs" t="Include" />
@@ -106,6 +107,8 @@
               <e p="PartPiece.cs" t="Include" />
               <e p="Parts.cs" t="Include" />
             </e>
+            <e p="WinZombiesDead.cs" t="Include" />
+            <e p="ZombieCount.cs" t="Include" />
             <e p="ZombiePlayer.cs" t="Include" />
             <e p="ZombiePlayerHealth.cs" t="Include" />
             <e p="ZombieSpawner.cs" t="Include" />

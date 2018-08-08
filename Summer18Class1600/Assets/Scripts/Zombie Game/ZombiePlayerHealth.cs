@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
@@ -12,6 +13,7 @@ public class ZombiePlayerHealth : MonoBehaviour
 	public RectTransform healthBar;
 	public bool destroyOnDeath;
 	public Transform SpawnPoint;
+	public ZombieCount DeadZombies;
 
 	public void TakeDamage(int amount)
 	{
@@ -21,6 +23,7 @@ public class ZombiePlayerHealth : MonoBehaviour
 			if (destroyOnDeath)
 			{
 				Destroy(gameObject);
+				DeadZombies.DeadZombies++;
 			}
 			else
 			{

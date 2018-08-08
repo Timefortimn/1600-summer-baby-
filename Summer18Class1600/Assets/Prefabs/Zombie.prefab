@@ -275,6 +275,7 @@ MonoBehaviour:
   healthBar: {fileID: 224084208538215132}
   destroyOnDeath: 1
   SpawnPoint: {fileID: 0}
+  DeadZombies: {fileID: 11400000, guid: 03fec7e31d3ee9543aa55f15a3cffb3d, type: 2}
 --- !u!114 &114996193739943926
 MonoBehaviour:
   m_ObjectHideFlags: 1
