@@ -27,10 +27,10 @@ public class ZombiePlayerHealth : MonoBehaviour
 				Debug.Log("Respawn");
 				currentHealth = maxHealth;
 				transform.position = SpawnPoint.position;
-
+				var lives = GetComponent<ChangeLives>();
+				lives.LoseLife();
 			}
 		}
-
 	}
 
 	void Update ()

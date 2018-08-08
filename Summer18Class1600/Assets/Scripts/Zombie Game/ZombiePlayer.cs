@@ -18,10 +18,13 @@ public class ZombiePlayer : MonoBehaviour
 	public float JumpSpeed = 50.0f;
 	public GameObject bulletPrefab;
 	public Transform bulletSpawn;
+	public AudioSource JumpSound;
+	public AudioSource FireSound;
 
 	void Start()
 	{
 		controller = GetComponent<CharacterController>();
+		JumpSound = GetComponent<AudioSource>();
 	}
 
 	void OnCollisionStay()
@@ -38,6 +41,7 @@ public class ZombiePlayer : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Space) && controller.isGrounded)
 		{
+			JumpSound.Play();
 			newPosition.y = JumpSpeed;
 			IsGrounded = false;
 		}
@@ -56,6 +60,7 @@ public class ZombiePlayer : MonoBehaviour
 
 	void Fire()
 	{
+		FireSound.Play();
 		var bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
 		
 		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 50;
